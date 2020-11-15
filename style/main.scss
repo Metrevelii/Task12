@@ -106,12 +106,17 @@ section {
     }
 }
 
-.article-contents {
-  width: 350px;
+.article-contents-middle {
+  padding: 0 20px;
+    img {
+      width: 100%;
+    }
 }
-.article-contents img{
+.article-contents {
+
+  img{
   width: 100%;
-  
+  }
 }
 
 .below-img {

@@ -78,8 +78,10 @@ section {
     color: #707070;
     margin-bottom: 70px; }
 
-.article-contents {
-  width: 350px; }
+.article-contents-middle {
+  padding: 0 20px; }
+  .article-contents-middle img {
+    width: 100%; }
 
 .article-contents img {
   width: 100%; }
