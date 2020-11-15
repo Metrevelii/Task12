@@ -1,0 +1,140 @@
+// reset css
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+  /* HTML5 display-role reset for older browsers */
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  
+  body {
+    line-height: 1; }
+  
+  ol, ul {
+    list-style: none; }
+  
+  blockquote, q {
+    quotes: none; }
+  
+  blockquote {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  q {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+    // reset css
+
+$color01: #707070;
+
+%container {
+  max-width: 1100px;
+  width: 100%;
+  margin:0 auto;
+}
+
+ body, html {
+   max-width: 1920px;
+   width: 100%;
+ }
+ 
+ .flex {
+   display: flex;
+   justify-content: space-between;
+ }
+ .container {
+    @extend %container;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+    .logo-img {
+      margin: 25px 0;
+      width: 102px;
+    }
+    .logo-img img{
+      width: 100%;
+
+    }
+}   
+  
+.navbar {
+     margin-top: 25px; 
+  
+     ul {
+      display: flex;
+      justify-content: flex-start;
+    }
+    li{
+      font-size: 20px;
+      padding: 0px 30px;
+    }
+    a {
+      color: $color01;
+      text-decoration: none;
+    }
+}
+
+section {
+  margin-top: 50px;
+
+  .top-img img{
+  width: 100%;
+}
+}
+.popular-section {
+  box-sizing: border-box;
+  margin-top: 70px;
+    h2 {
+      font-size: 40px;
+      color: $color01;
+      margin-bottom: 70px;
+    }
+}
+
+.article-contents {
+  width: 350px;
+}
+.article-contents img{
+  width: 100%;
+  
+}
+
+.below-img {
+  padding:10px 0;
+    h3 {
+      color: $color01;
+      font-size: 30px;
+      padding-bottom: 33px;
+    }
+    p {
+      color: $color01;
+      font-size: 18px;
+    }
+
+}
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+  padding:0 33px 13px 0;
+    a{
+      font-size: 24px;
+      color: $color01;
+      text-decoration: none;
+    }
+}
+
